@@ -9,7 +9,7 @@ import json
 import requests
 import pandas as pd
 import datetime
-key = 'db9a2d79eb9fdaac9ca5f3fe6f93e5de'
+key = pd.read_csv('C/SEONWOO/key.txt').columns[0]
 
 def getLatLng(addr):
     url = 'https://dapi.kakao.com/v2/local/search/address.json?query='+addr
